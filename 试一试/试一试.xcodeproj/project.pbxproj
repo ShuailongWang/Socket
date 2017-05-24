@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C548075B59210A3536D662C /* libPods-试一试.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1AB70463CA4428D1497A0F /* libPods-试一试.a */; };
+		84608C081ED56422004EEE19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608C071ED56422004EEE19 /* main.m */; };
+		84608C0B1ED56422004EEE19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608C0A1ED56422004EEE19 /* AppDelegate.m */; };
+		84608C0E1ED56422004EEE19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608C0D1ED56422004EEE19 /* ViewController.m */; };
+		84608C111ED56422004EEE19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84608C0F1ED56422004EEE19 /* Main.storyboard */; };
+		84608C131ED56422004EEE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84608C121ED56422004EEE19 /* Assets.xcassets */; };
+		84608C161ED56422004EEE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84608C141ED56422004EEE19 /* LaunchScreen.storyboard */; };
+		84608C1F1ED5643F004EEE19 /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608C1E1ED5643F004EEE19 /* SocketManager.m */; };
+		84608C2B1ED568E4004EEE19 /* GCDSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608C2A1ED568E4004EEE19 /* GCDSocketManager.m */; };
+		84608C2E1ED5695F004EEE19 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608C2D1ED5695F004EEE19 /* GCDViewController.m */; };
+		84608C311ED56B11004EEE19 /* WebScoketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608C301ED56B11004EEE19 /* WebScoketViewController.m */; };
+		84608C7B1ED56BFC004EEE19 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608C7A1ED56BFC004EEE19 /* WebSocketManager.m */; };
+		84608D0F1ED56D72004EEE19 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608D0C1ED56D72004EEE19 /* GCDAsyncSocket.m */; };
+		84608D101ED56D72004EEE19 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608D0E1ED56D72004EEE19 /* GCDAsyncUdpSocket.m */; };
+		84608D151ED570FD004EEE19 /* MQTTKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608D141ED570FD004EEE19 /* MQTTKit.m */; };
+		84608D351ED5715F004EEE19 /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D191ED5715F004EEE19 /* logging_mosq.c */; };
+		84608D361ED5715F004EEE19 /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D1B1ED5715F004EEE19 /* memory_mosq.c */; };
+		84608D371ED5715F004EEE19 /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D1D1ED5715F004EEE19 /* messages_mosq.c */; };
+		84608D381ED5715F004EEE19 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D1F1ED5715F004EEE19 /* mosquitto.c */; };
+		84608D391ED5715F004EEE19 /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D231ED5715F004EEE19 /* net_mosq.c */; };
+		84608D3A1ED5715F004EEE19 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D251ED5715F004EEE19 /* read_handle.c */; };
+		84608D3B1ED5715F004EEE19 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D271ED5715F004EEE19 /* read_handle_client.c */; };
+		84608D3C1ED5715F004EEE19 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D281ED5715F004EEE19 /* read_handle_shared.c */; };
+		84608D3D1ED5715F004EEE19 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D291ED5715F004EEE19 /* send_client_mosq.c */; };
+		84608D3E1ED5715F004EEE19 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D2A1ED5715F004EEE19 /* send_mosq.c */; };
+		84608D3F1ED5715F004EEE19 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D2C1ED5715F004EEE19 /* thread_mosq.c */; };
+		84608D401ED5715F004EEE19 /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D2D1ED5715F004EEE19 /* time_mosq.c */; };
+		84608D411ED5715F004EEE19 /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D2F1ED5715F004EEE19 /* tls_mosq.c */; };
+		84608D421ED5715F004EEE19 /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D311ED5715F004EEE19 /* util_mosq.c */; };
+		84608D431ED5715F004EEE19 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84608D331ED5715F004EEE19 /* will_mosq.c */; };
+		84608D461ED571EA004EEE19 /* MQTTSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608D451ED571EA004EEE19 /* MQTTSocketManager.m */; };
+		84608D491ED57239004EEE19 /* MQTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84608D481ED57239004EEE19 /* MQTTViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84608C031ED56422004EEE19 /* 试一试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "试一试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84608C071ED56422004EEE19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84608C091ED56422004EEE19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84608C0A1ED56422004EEE19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84608C0C1ED56422004EEE19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84608C0D1ED56422004EEE19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84608C101ED56422004EEE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84608C121ED56422004EEE19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84608C151ED56422004EEE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84608C171ED56422004EEE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84608C1D1ED5643F004EEE19 /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
+		84608C1E1ED5643F004EEE19 /* SocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketManager.m; sourceTree = "<group>"; };
+		84608C291ED568E4004EEE19 /* GCDSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSocketManager.h; sourceTree = "<group>"; };
+		84608C2A1ED568E4004EEE19 /* GCDSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSocketManager.m; sourceTree = "<group>"; };
+		84608C2C1ED5695F004EEE19 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		84608C2D1ED5695F004EEE19 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		84608C2F1ED56B11004EEE19 /* WebScoketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebScoketViewController.h; sourceTree = "<group>"; };
+		84608C301ED56B11004EEE19 /* WebScoketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebScoketViewController.m; sourceTree = "<group>"; };
+		84608C791ED56BFC004EEE19 /* WebSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketManager.h; sourceTree = "<group>"; };
+		84608C7A1ED56BFC004EEE19 /* WebSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketManager.m; sourceTree = "<group>"; };
+		84608D0B1ED56D72004EEE19 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		84608D0C1ED56D72004EEE19 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		84608D0D1ED56D72004EEE19 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		84608D0E1ED56D72004EEE19 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		84608D121ED570FD004EEE19 /* MQTTKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQTTKit-Prefix.pch"; sourceTree = "<group>"; };
+		84608D131ED570FD004EEE19 /* MQTTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTKit.h; sourceTree = "<group>"; };
+		84608D141ED570FD004EEE19 /* MQTTKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTKit.m; sourceTree = "<group>"; };
+		84608D171ED5715F004EEE19 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		84608D181ED5715F004EEE19 /* dummypthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dummypthread.h; sourceTree = "<group>"; };
+		84608D191ED5715F004EEE19 /* logging_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logging_mosq.c; sourceTree = "<group>"; };
+		84608D1A1ED5715F004EEE19 /* logging_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging_mosq.h; sourceTree = "<group>"; };
+		84608D1B1ED5715F004EEE19 /* memory_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory_mosq.c; sourceTree = "<group>"; };
+		84608D1C1ED5715F004EEE19 /* memory_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_mosq.h; sourceTree = "<group>"; };
+		84608D1D1ED5715F004EEE19 /* messages_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = messages_mosq.c; sourceTree = "<group>"; };
+		84608D1E1ED5715F004EEE19 /* messages_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messages_mosq.h; sourceTree = "<group>"; };
+		84608D1F1ED5715F004EEE19 /* mosquitto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mosquitto.c; sourceTree = "<group>"; };
+		84608D201ED5715F004EEE19 /* mosquitto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto.h; sourceTree = "<group>"; };
+		84608D211ED5715F004EEE19 /* mosquitto_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto_internal.h; sourceTree = "<group>"; };
+		84608D221ED5715F004EEE19 /* mqtt3_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqtt3_protocol.h; sourceTree = "<group>"; };
+		84608D231ED5715F004EEE19 /* net_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net_mosq.c; sourceTree = "<group>"; };
+		84608D241ED5715F004EEE19 /* net_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_mosq.h; sourceTree = "<group>"; };
+		84608D251ED5715F004EEE19 /* read_handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle.c; sourceTree = "<group>"; };
+		84608D261ED5715F004EEE19 /* read_handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_handle.h; sourceTree = "<group>"; };
+		84608D271ED5715F004EEE19 /* read_handle_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_client.c; sourceTree = "<group>"; };
+		84608D281ED5715F004EEE19 /* read_handle_shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_shared.c; sourceTree = "<group>"; };
+		84608D291ED5715F004EEE19 /* send_client_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_client_mosq.c; sourceTree = "<group>"; };
+		84608D2A1ED5715F004EEE19 /* send_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_mosq.c; sourceTree = "<group>"; };
+		84608D2B1ED5715F004EEE19 /* send_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = send_mosq.h; sourceTree = "<group>"; };
+		84608D2C1ED5715F004EEE19 /* thread_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread_mosq.c; sourceTree = "<group>"; };
+		84608D2D1ED5715F004EEE19 /* time_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = time_mosq.c; sourceTree = "<group>"; };
+		84608D2E1ED5715F004EEE19 /* time_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_mosq.h; sourceTree = "<group>"; };
+		84608D2F1ED5715F004EEE19 /* tls_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tls_mosq.c; sourceTree = "<group>"; };
+		84608D301ED5715F004EEE19 /* tls_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls_mosq.h; sourceTree = "<group>"; };
+		84608D311ED5715F004EEE19 /* util_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util_mosq.c; sourceTree = "<group>"; };
+		84608D321ED5715F004EEE19 /* util_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_mosq.h; sourceTree = "<group>"; };
+		84608D331ED5715F004EEE19 /* will_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = will_mosq.c; sourceTree = "<group>"; };
+		84608D341ED5715F004EEE19 /* will_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = will_mosq.h; sourceTree = "<group>"; };
+		84608D441ED571EA004EEE19 /* MQTTSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSocketManager.h; sourceTree = "<group>"; };
+		84608D451ED571EA004EEE19 /* MQTTSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSocketManager.m; sourceTree = "<group>"; };
+		84608D471ED57239004EEE19 /* MQTTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTViewController.h; sourceTree = "<group>"; };
+		84608D481ED57239004EEE19 /* MQTTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTViewController.m; sourceTree = "<group>"; };
+		CD1E6E015EC82A194F7C0675 /* Pods-试一试.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-试一试.release.xcconfig"; path = "Pods/Target Support Files/Pods-试一试/Pods-试一试.release.xcconfig"; sourceTree = "<group>"; };
+		DF3C9C9701F73FF25AA3D3DC /* Pods-试一试.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-试一试.debug.xcconfig"; path = "Pods/Target Support Files/Pods-试一试/Pods-试一试.debug.xcconfig"; sourceTree = "<group>"; };
+		FE1AB70463CA4428D1497A0F /* libPods-试一试.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-试一试.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84608C001ED56422004EEE19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C548075B59210A3536D662C /* libPods-试一试.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		222D68415F20AFD61102C169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE1AB70463CA4428D1497A0F /* libPods-试一试.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84608BFA1ED56422004EEE19 = {
+			isa = PBXGroup;
+			children = (
+				84608C051ED56422004EEE19 /* 试一试 */,
+				84608C041ED56422004EEE19 /* Products */,
+				8D4DD0019A83A44DB8860006 /* Pods */,
+				222D68415F20AFD61102C169 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84608C041ED56422004EEE19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84608C031ED56422004EEE19 /* 试一试.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84608C051ED56422004EEE19 /* 试一试 */ = {
+			isa = PBXGroup;
+			children = (
+				84608D111ED570FD004EEE19 /* MQTTKit */,
+				84608D0A1ED56D72004EEE19 /* GCD */,
+				84608C091ED56422004EEE19 /* AppDelegate.h */,
+				84608C0A1ED56422004EEE19 /* AppDelegate.m */,
+				84608C0C1ED56422004EEE19 /* ViewController.h */,
+				84608C0D1ED56422004EEE19 /* ViewController.m */,
+				84608C2C1ED5695F004EEE19 /* GCDViewController.h */,
+				84608C2D1ED5695F004EEE19 /* GCDViewController.m */,
+				84608C2F1ED56B11004EEE19 /* WebScoketViewController.h */,
+				84608C301ED56B11004EEE19 /* WebScoketViewController.m */,
+				84608D471ED57239004EEE19 /* MQTTViewController.h */,
+				84608D481ED57239004EEE19 /* MQTTViewController.m */,
+				84608C0F1ED56422004EEE19 /* Main.storyboard */,
+				84608C121ED56422004EEE19 /* Assets.xcassets */,
+				84608C141ED56422004EEE19 /* LaunchScreen.storyboard */,
+				84608C171ED56422004EEE19 /* Info.plist */,
+				84608C061ED56422004EEE19 /* Supporting Files */,
+			);
+			path = "试一试";
+			sourceTree = "<group>";
+		};
+		84608C061ED56422004EEE19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84608C071ED56422004EEE19 /* main.m */,
+				84608C1D1ED5643F004EEE19 /* SocketManager.h */,
+				84608C1E1ED5643F004EEE19 /* SocketManager.m */,
+				84608C291ED568E4004EEE19 /* GCDSocketManager.h */,
+				84608C2A1ED568E4004EEE19 /* GCDSocketManager.m */,
+				84608C791ED56BFC004EEE19 /* WebSocketManager.h */,
+				84608C7A1ED56BFC004EEE19 /* WebSocketManager.m */,
+				84608D441ED571EA004EEE19 /* MQTTSocketManager.h */,
+				84608D451ED571EA004EEE19 /* MQTTSocketManager.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84608D0A1ED56D72004EEE19 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				84608D0B1ED56D72004EEE19 /* GCDAsyncSocket.h */,
+				84608D0C1ED56D72004EEE19 /* GCDAsyncSocket.m */,
+				84608D0D1ED56D72004EEE19 /* GCDAsyncUdpSocket.h */,
+				84608D0E1ED56D72004EEE19 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		84608D111ED570FD004EEE19 /* MQTTKit */ = {
+			isa = PBXGroup;
+			children = (
+				84608D161ED5715F004EEE19 /* libmosquitto */,
+				84608D121ED570FD004EEE19 /* MQTTKit-Prefix.pch */,
+				84608D131ED570FD004EEE19 /* MQTTKit.h */,
+				84608D141ED570FD004EEE19 /* MQTTKit.m */,
+			);
+			path = MQTTKit;
+			sourceTree = "<group>";
+		};
+		84608D161ED5715F004EEE19 /* libmosquitto */ = {
+			isa = PBXGroup;
+			children = (
+				84608D171ED5715F004EEE19 /* config.h */,
+				84608D181ED5715F004EEE19 /* dummypthread.h */,
+				84608D191ED5715F004EEE19 /* logging_mosq.c */,
+				84608D1A1ED5715F004EEE19 /* logging_mosq.h */,
+				84608D1B1ED5715F004EEE19 /* memory_mosq.c */,
+				84608D1C1ED5715F004EEE19 /* memory_mosq.h */,
+				84608D1D1ED5715F004EEE19 /* messages_mosq.c */,
+				84608D1E1ED5715F004EEE19 /* messages_mosq.h */,
+				84608D1F1ED5715F004EEE19 /* mosquitto.c */,
+				84608D201ED5715F004EEE19 /* mosquitto.h */,
+				84608D211ED5715F004EEE19 /* mosquitto_internal.h */,
+				84608D221ED5715F004EEE19 /* mqtt3_protocol.h */,
+				84608D231ED5715F004EEE19 /* net_mosq.c */,
+				84608D241ED5715F004EEE19 /* net_mosq.h */,
+				84608D251ED5715F004EEE19 /* read_handle.c */,
+				84608D261ED5715F004EEE19 /* read_handle.h */,
+				84608D271ED5715F004EEE19 /* read_handle_client.c */,
+				84608D281ED5715F004EEE19 /* read_handle_shared.c */,
+				84608D291ED5715F004EEE19 /* send_client_mosq.c */,
+				84608D2A1ED5715F004EEE19 /* send_mosq.c */,
+				84608D2B1ED5715F004EEE19 /* send_mosq.h */,
+				84608D2C1ED5715F004EEE19 /* thread_mosq.c */,
+				84608D2D1ED5715F004EEE19 /* time_mosq.c */,
+				84608D2E1ED5715F004EEE19 /* time_mosq.h */,
+				84608D2F1ED5715F004EEE19 /* tls_mosq.c */,
+				84608D301ED5715F004EEE19 /* tls_mosq.h */,
+				84608D311ED5715F004EEE19 /* util_mosq.c */,
+				84608D321ED5715F004EEE19 /* util_mosq.h */,
+				84608D331ED5715F004EEE19 /* will_mosq.c */,
+				84608D341ED5715F004EEE19 /* will_mosq.h */,
+			);
+			path = libmosquitto;
+			sourceTree = "<group>";
+		};
+		8D4DD0019A83A44DB8860006 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF3C9C9701F73FF25AA3D3DC /* Pods-试一试.debug.xcconfig */,
+				CD1E6E015EC82A194F7C0675 /* Pods-试一试.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84608C021ED56422004EEE19 /* 试一试 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84608C1A1ED56422004EEE19 /* Build configuration list for PBXNativeTarget "试一试" */;
+			buildPhases = (
+				510E4AC5547F30D7A5EF7913 /* [CP] Check Pods Manifest.lock */,
+				84608BFF1ED56422004EEE19 /* Sources */,
+				84608C001ED56422004EEE19 /* Frameworks */,
+				84608C011ED56422004EEE19 /* Resources */,
+				6F3744E4FF8A6DBE46DD113D /* [CP] Embed Pods Frameworks */,
+				9CFB8BC06DEEA99E545295A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "试一试";
+			productName = "试一试";
+			productReference = 84608C031ED56422004EEE19 /* 试一试.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84608BFB1ED56422004EEE19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "北京奥泰瑞格科技有限公司";
+				TargetAttributes = {
+					84608C021ED56422004EEE19 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84608BFE1ED56422004EEE19 /* Build configuration list for PBXProject "试一试" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84608BFA1ED56422004EEE19;
+			productRefGroup = 84608C041ED56422004EEE19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84608C021ED56422004EEE19 /* 试一试 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84608C011ED56422004EEE19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84608C161ED56422004EEE19 /* LaunchScreen.storyboard in Resources */,
+				84608C131ED56422004EEE19 /* Assets.xcassets in Resources */,
+				84608C111ED56422004EEE19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		510E4AC5547F30D7A5EF7913 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F3744E4FF8A6DBE46DD113D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-试一试/Pods-试一试-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CFB8BC06DEEA99E545295A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-试一试/Pods-试一试-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84608BFF1ED56422004EEE19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84608D101ED56D72004EEE19 /* GCDAsyncUdpSocket.m in Sources */,
+				84608D391ED5715F004EEE19 /* net_mosq.c in Sources */,
+				84608D151ED570FD004EEE19 /* MQTTKit.m in Sources */,
+				84608C0E1ED56422004EEE19 /* ViewController.m in Sources */,
+				84608D361ED5715F004EEE19 /* memory_mosq.c in Sources */,
+				84608D411ED5715F004EEE19 /* tls_mosq.c in Sources */,
+				84608C0B1ED56422004EEE19 /* AppDelegate.m in Sources */,
+				84608C2E1ED5695F004EEE19 /* GCDViewController.m in Sources */,
+				84608D421ED5715F004EEE19 /* util_mosq.c in Sources */,
+				84608D381ED5715F004EEE19 /* mosquitto.c in Sources */,
+				84608D0F1ED56D72004EEE19 /* GCDAsyncSocket.m in Sources */,
+				84608C7B1ED56BFC004EEE19 /* WebSocketManager.m in Sources */,
+				84608D401ED5715F004EEE19 /* time_mosq.c in Sources */,
+				84608D3B1ED5715F004EEE19 /* read_handle_client.c in Sources */,
+				84608D3E1ED5715F004EEE19 /* send_mosq.c in Sources */,
+				84608D461ED571EA004EEE19 /* MQTTSocketManager.m in Sources */,
+				84608C1F1ED5643F004EEE19 /* SocketManager.m in Sources */,
+				84608D3C1ED5715F004EEE19 /* read_handle_shared.c in Sources */,
+				84608D431ED5715F004EEE19 /* will_mosq.c in Sources */,
+				84608D371ED5715F004EEE19 /* messages_mosq.c in Sources */,
+				84608D491ED57239004EEE19 /* MQTTViewController.m in Sources */,
+				84608C2B1ED568E4004EEE19 /* GCDSocketManager.m in Sources */,
+				84608D351ED5715F004EEE19 /* logging_mosq.c in Sources */,
+				84608D3F1ED5715F004EEE19 /* thread_mosq.c in Sources */,
+				84608C311ED56B11004EEE19 /* WebScoketViewController.m in Sources */,
+				84608D3A1ED5715F004EEE19 /* read_handle.c in Sources */,
+				84608D3D1ED5715F004EEE19 /* send_client_mosq.c in Sources */,
+				84608C081ED56422004EEE19 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84608C0F1ED56422004EEE19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84608C101ED56422004EEE19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84608C141ED56422004EEE19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84608C151ED56422004EEE19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84608C181ED56422004EEE19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84608C191ED56422004EEE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84608C1B1ED56422004EEE19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3C9C9701F73FF25AA3D3DC /* Pods-试一试.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/试一试/MQTTKit/MQTTKit-Prefix.pch";
+				INFOPLIST_FILE = "试一试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rgpsy.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84608C1C1ED56422004EEE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1E6E015EC82A194F7C0675 /* Pods-试一试.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/试一试/MQTTKit/MQTTKit-Prefix.pch";
+				INFOPLIST_FILE = "试一试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rgpsy.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84608BFE1ED56422004EEE19 /* Build configuration list for PBXProject "试一试" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84608C181ED56422004EEE19 /* Debug */,
+				84608C191ED56422004EEE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84608C1A1ED56422004EEE19 /* Build configuration list for PBXNativeTarget "试一试" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84608C1B1ED56422004EEE19 /* Debug */,
+				84608C1C1ED56422004EEE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84608BFB1ED56422004EEE19 /* Project object */;
+}
